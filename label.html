@@ -6,18 +6,137 @@
 </head>
 <body>
 
-
 <form >
+  <!--Label-->
+  <div>
+      <label>Username</label><br>
+      <input type="text"  id="name" placeholder="Enter Your Name">
+  </div>
 
-  <label>Username</label><br>
+  <br>
 
-  <input type="text"  id="name" placeholder="Enter Your Name">
+  <div>
+     <label>Password</label><br>
+      <input type="password"  id="password" placeholder="Enter Your Password">
+  </div>
+
+  <br>
+
+  <div>
+
+   <!--cols--esentage ekakata wada karanne 100-->
+    <!--rows-- enter karana rows ganata wada karanne-->
+
+    <label for="message">Message </label><br>
+  <textarea id="message"
+            cols="50"
+            rows="10"
+            placeholder="Enter Your Message" >
+
+  </textarea>
+  </div>
+
+  <br>
+
+  <!--Select-->
+  <div>
+  <label for="language">Select Your Programming Language</label><br>
+  <select id="language">
+    <option value ="java">Java</option>
+    <option value="c++">C++</option>
+    <option value="python">Python</option>
+    <option value="c">C</option>
+    <option value="c#">C#</option>
+    <option value="go">GO</option>
+
+  </select>
+</div>
+
+  <br>
+
+
+  <!--Option Group-->
+  <div>
+    <label for="tech">Select Your Tech</label><br>
+    <select id="tech">
+
+      <optgroup label="Language">
+        <option value ="java">Java</option>
+        <option value="c++">C++</option>
+        <option value="python">Python</option>
+        <option value="c">C</option>
+        <option value="c#">C#</option>
+        <option value="go">GO</option>
+      </optgroup>
+
+      <optgroup label="Frontend Frame works">
+        <option value="reactJS">ReactJS</option>
+        <option value="nextJS">NextJS</option>
+        <option value="angular">Angular</option>
+      </optgroup>
+
+      <optgroup label="Backend Frame works">
+        <option value="spring boot">Spring Boot</option>
+        <option value="vueJS">VueJS</option>
+        <option value="expressJS">ExpressJS</option>
+      </optgroup>
+
+    </select>
+  </div>
+
+  <br>
+
+  <!--Data list-->
+
+  <div>
+    <label for="country-search">Select Your Country</label>
+
+    <input type="text"  id="country-search" placeholder="Enter Your Country" list="countries">
+
+    <datalist id="countries">
+      <option value="sri lanka">Sri Lanka</option>
+      <option value="usa">USA</option>
+      <option value="japan">Japan</option>
+      <option value="russia">Russia</option>
+      <option value="china">China</option>
+      <option value="uk">Uk</option>
+    </datalist>
+  </div>
+
+  <br>
+
+  <fieldset>
+
+    <legend>Select Your Gender</legend>
+  <input type="radio"  id="male" name="gender"> <label for="male">Male</label>
+  <input type="radio"  id="female" name="gender"> <label for="female">Female</label>
+  </fieldset>
+
+  <br>
+
+  <!--Button-->
+
+  <input type="button" value="Click">
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+
   <br><br>
 
-  <label>Password</label><br>
-  <input type="password"  id="password" placeholder="Enter Your Password">
+  <!--api dan meyalawa thama use karannee-->
+  <button type="button" >Click</button>
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
 
+</form>
 
+<br>
+
+<form  oninput="result.value= (a.value)+(b.value)">
+  <input type="range" id="a" name="a" value="10">
+  hello
+  <input type="number" id="b" name="b" value="20">
+  hi
+  <output name="result">30</output>
 
 </form>
 </body>
